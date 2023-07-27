@@ -14,6 +14,8 @@ if [ "$SWAP" = "1" ]; then
   echo 1 > /proc/sys/vm/overcommit_memory
 fi
 
+mkdir -p /etc/redis/
+
 # Redis config
 REDIS_CONF="/etc/redis/redis.conf"
 # Read from REDIS_PORT, default 6379
